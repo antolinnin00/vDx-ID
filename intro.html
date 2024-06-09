@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERCELL ID</title>
+    <link rel="icon" href="./img/image.svg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f3f3f3;
+        }
+        .header {
+            background-color: #005cbf;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 30px;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .profile-container img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-info .status {
+            color: green;
+            font-weight: bold;
+        }
+        .profile-info .name {
+            font-size: 1.5em;
+        }
+        .tabs {
+            display: flex;
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .tab img {
+            display: block;
+            margin: 0 auto 5px;
+        }
+        .tab.active {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .friends-list {
+            padding: 20px;
+        }
+        .friend {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .friend img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .friend .info {
+            flex: 1;
+        }
+        .friend .status {
+            color: gray;
+        }
+        .add-friend {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .add-friend img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="./img/image.svg" alt="SUPERCELL ID">
+        </div>
+        <div>
+            <a href="/">
+                <img src="./img/close.svg" alt="Cerrar">
+            </a>
+        </div>
+    </div>
+    <div class="profile-container">
+        <img src="./img/3614f9671eb92af5ac9c1f97f8f1a004.jpg" alt="Perfil" width="60" height="60">
+        <div class="profile-info">
+            <div class="name">User</div>
+            <div class="status">En línea</div>
+        </div>
+        <div>
+            <a href="configuracion.html">
+                <img src="./img/settings.svg" alt="Configuración" width="30" height="30">
+            </a>
+        </div>
+    </div>
+    <div class="tabs">
+        <div class="tab active">
+            <img src="./img/friends.svg" alt="Amigos">
+            <div>Amigos</div>
+        </div>
+        <div class="tab">
+            <img src="./img/games.svg" alt="Mis Juegos">
+            <div>Mis Juegos</div>
+        </div>
+    </div>
+    <div class="friends-list">
+        <div class="friend">
+            <img src="./img/descarga.jpg" alt="Perfil" width="50" height="50">
+            <div class="info">
+                <div>User2</div>
+                <div class="status">Desconectado</div>
+            </div>
+            <div>
+                <img src="./img/friends.svg" alt="Ver perfil" width="20" height="20">
+                <div>Ver Perfil</div>
+            </div>
+        </div>
+    </div>
+    <div class="add-friend">
+        <img src="./img/friends.svg" alt="Añadir Amigo">
+    </div>
+</body>
+</html>
