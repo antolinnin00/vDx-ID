@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERCELL ID</title>
+    <title>My Games</title>
     <link rel="icon" href="./img/image.svg" type="image/x-icon">
     <style>
         body {
@@ -59,54 +59,41 @@
             margin: 0 auto 5px;
         }
         .tab.active {
-            background-color: #f0f0f0;
             font-weight: bold;
+            border-bottom: 3px solid #000;
         }
-        .friends-list {
+        .games-list {
             padding: 20px;
         }
-        .friend {
+        .game {
             display: flex;
             align-items: center;
             padding: 10px 0;
             border-bottom: 1px solid #e0e0e0;
         }
-        .friend img {
-            border-radius: 50%;
+        .game img {
+            border-radius: 10px;
             margin-right: 20px;
         }
-        .friend .info {
+        .game .info {
             flex: 1;
         }
-        .friend .status {
+        .game .status {
             color: gray;
-        }
-        .add-friend {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: #e0e0e0;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-        .add-friend img {
-            width: 30px;
-            height: 30px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div>
-            <img src="./img/image.svg" alt="SUPERCELL ID">
+            <img src="./img/volver.svg" alt="Volver">
         </div>
         <div>
-            <a href="/intro1.html">
+            <span>ID</span>
+            <span>AntNin26</span>
+        </div>
+        <div>
+            <a href="index.html">
                 <img src="./img/close.svg" alt="Cerrar">
             </a>
         </div>
@@ -114,7 +101,7 @@
     <div class="profile-container">
         <img src="./img/3614f9671eb92af5ac9c1f97f8f1a004.jpg" alt="Perfil" width="60" height="60">
         <div class="profile-info">
-            <div class="name">User</div>
+            <div class="name">AntNin26</div>
             <div class="status">En línea</div>
         </div>
         <div>
@@ -124,31 +111,31 @@
         </div>
     </div>
     <div class="tabs">
-        <div class="tab active">
-            <img src="./img/friends.svg" alt="Amigos">
-            <div>Amigos</div>
-        </div>
         <div class="tab">
-        <a href="my-games.html" style="text-decoration: none; color: inherit;">
+            <img src="./img/friends.svg" alt="Amigos">
+            <div>AMIGOS</div>
+        </div>
+        <div class="tab active">
             <img src="./img/games.svg" alt="Mis Juegos">
-            <div>Mis Juegos</div>
+            <div>MIS JUEGOS</div>
         </div>
     </div>
-    <div class="friends-list">
-        <div class="friend">
-            <img src="./img/descarga.jpg" alt="Perfil" width="50" height="50">
+    <div class="games-list">
+        <div class="game">
+            <img src="./img/descarga (2).jpg" alt="Beatstar" width="50" height="50">
             <div class="info">
-                <div>User2</div>
-                <div class="status">Desconectado</div>
-            </div>
-            <div>
-                <img src="./img/friends.svg" alt="Ver perfil" width="20" height="20">
-                <div>Ver Perfil</div>
+                <div>Beatstar</div>
+                <div class="status">User</div>
             </div>
         </div>
-    </div>
-    <div class="add-friend">
-        <img src="./img/friends.svg" alt="Añadir Amigo">
+        <div class="game">
+            <img src="./img/descarga (1).jpg" alt="Brawl Stars" width="50" height="50">
+            <div class="info">
+                <div>Brawl Stars</div>
+                <div class="status">User</div>
+                <div class="status">Trofeos: 1909</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
